@@ -1,3 +1,5 @@
 {
-    "python.pythonPath": "C:\\Users\\mgaldamez\\pytst\\djfull\\prod\\entvirt\\Scripts\\python.exe"
+    "python.pythonPath": "/home/mgaldamez/dev/python/cdjango/prod/entvirt/bin/python",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
 }
