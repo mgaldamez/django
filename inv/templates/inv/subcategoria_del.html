@@ -8,12 +8,14 @@
             <div class="card-body">
                 <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                        <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Eliminar Categoria
-                            <strong>{{obj.descripcion }}</strong>?</div>
+                        <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                            Eliminar Sub-Categoria: <strong>{{obj.descripcion }}</strong>?
+                        
+                        </div>
                             <br/>
                         <button type="submit" class="btn btn-danger">
                             <i class="far fa-question-circle"></i> Eliminar</button>
-                        <a href="{% url 'inv:categoria_list' %}" class="btn btn-success"><span
+                        <a href="{% url 'inv:subcategoria_list' %}" class="btn btn-success"><span
                                 class="fa fa-undo"></span>Cancelar</a>
                     </div>
                     <div class="col-auto">

@@ -1,5 +1,10 @@
 {
-    "python.pythonPath": "/home/mgaldamez/dev/python/cdjango/prod/entvirt/bin/python",
+    "python.pythonPath": "D:\\Dev\\python\\djfull\\prod\\entvirt\\Scripts\\python.exe",
     "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true
+    "python.linting.enabled": true,
+    "terminal.integrated.shell.windows":"C:\\WINDOWS\\system32\\cmd.exe",
+    "terminal.integrated.shellArgs.windows": [
+        "/K",
+        "D:\\sw\\cmder\\vsc.bat"
+    ],
 }
