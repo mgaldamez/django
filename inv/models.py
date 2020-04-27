@@ -96,3 +96,4 @@ class Producto(ClaseModelo):
     class Meta:
         verbose_name_plural = "Productos"
         unique_together = ('codigo','codigo_barra')
+
