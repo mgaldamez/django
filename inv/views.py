@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.views import generic
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
+from django.contrib import messages
 
 from .models import Categoria, SubCategoria, Marca, UnidadMedida, Producto
 from .forms import CategoriaForm, SubCategoriaForm, MarcaForm, UMForm, ProductoForm
@@ -131,8 +132,11 @@ def marca_inactivar(request, id):
     if request.method == 'POST':
         if marca.estado == True:
             marca.estado = False
+            messages.success(request, 'Marca Inactivada.')
+            
         else:
             marca.estado = True
+            messages.success(request, 'Marca Reactivada.')
         marca.save()
         return redirect("inv:marca_list")
 
